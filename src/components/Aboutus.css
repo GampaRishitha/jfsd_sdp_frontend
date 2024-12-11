@@ -1,0 +1,74 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-image: url('C:/Users/Rishitha/eclipse-workspace/sdpproj/public/image4.jpeg'); /* Ensure the correct path */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center;
+  height: 300vh; /* Set to 100% of the viewport height */
+  width: 100vw; /* Set to 100% of the viewport width */
+  display: block; /* Use flexbox for centering */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: stretch; /* Center items vertically */
+  padding-top: 0;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  padding: 25px;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+li {
+  padding: 25px;
+  margin: 5px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #007BFF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+li:hover {
+  background-color: #007BFF;
+  color: white;
+  transform: scale(1.02);
+}
+
+div.selected-page {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.9); /* Set transparency for background */
+  border-radius: 5px;
+  max-width: 1450px;
+  margin: 20px auto;
+  color: black;
+}

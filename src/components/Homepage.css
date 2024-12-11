@@ -1,0 +1,99 @@
+/* Homepage.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.homepage {
+  text-align: center;
+  padding: 20px;
+}
+
+.homepage-header {
+  background-color: #5a5a5a;
+  color: white;
+  padding: 40px;
+  border-bottom: 5px solid #161207; /* Golden border */
+}
+
+.homepage-header h1 {
+  font-size: 3rem;
+  color: aliceblue;
+  margin: 0;
+}
+
+.homepage-header p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.art-description, .gallery-mission {
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.art-description h2, .gallery-mission h2 {
+  font-size: 2rem;
+  color: #13110d; /* Golden color */
+  margin-bottom: 15px;
+}
+
+.art-description p, .gallery-mission p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.art-images {
+  margin: 40px auto;
+}
+
+.art-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between images */
+  margin-top: 20px;
+}
+
+.art-image {
+  width: 300px; /* Fixed width for all images */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures the images fill the rectangular space without distortion */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  transition: transform 0.3s ease; /* Optional: Smooth hover effect */
+}
+
+.art-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+.homepage-footer {
+  background-color: #5a5a5a;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 1rem;
+  border-top: 5px solid #120f08; /* Golden border */
+}
+
+.homepage-footer p {
+  margin: 5px 0;
+}
+
+@media (max-width: 76px) {
+  .art-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .art-image {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+}
